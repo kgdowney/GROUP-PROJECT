@@ -1,2 +1,1 @@
-# GROUP-PROJECT
-Tentative name, of course...
+\n## Second Header
