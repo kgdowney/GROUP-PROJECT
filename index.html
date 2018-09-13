@@ -30,8 +30,8 @@
 
 <body>
     <!--Nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">VeggieLife</a>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">VL Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@
         <div class="container">
       
           <!-- Jumbotron for Title -->
-          <div class="jumbotron" style="background-color: #20315A ; color: white;">
+          <div class="jumbotron">
             <h1 class="text-center">
               <strong>
                 <i class="fa fa-leaf"></i> VeggieLife</strong>
@@ -73,15 +73,16 @@
                   <strong>
                     <i class="fas fa-city"></i> Search Your City</strong>
                 </div>
+                
                 <div class="card-body">
-      
                   <!-- Here we create an HTML Form for handling the inputs-->
-                  <form role="form">
+                  <form role="search-form">
       
                     <!-- Here we create the text box for capturing the search term-->
                     <div class="form-group">
                       <label for="search">City:</label>
-                      <input type="text" class="form-control" id="search-term">
+                      <input type="text" class="form-control" id="search-input">
+
                     </div>
       
                     <!-- Here we have our final submit button -->
@@ -89,6 +90,8 @@
                       <i class="fa fa-search"></i> Search</button>
                   </form>
                 </div>
+
+
               </div>
             </div>
           </div>
@@ -113,7 +116,8 @@
               </div>
             </div>
           </div>
-    
+
+
 
 
 

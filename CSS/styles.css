@@ -2,12 +2,16 @@
     color: #265C00;
 }
 .jumbotron {
-    background-color: #68A225; 
+    background-color: #265C00; 
     color: #FDffff;
 }
 body {
-    background-color:#FDffff;
+    background-image: linear-gradient( #68A225, #B3DE81);
 }
-.nav {
+.navbar {
     color: #265C00;
+}
+
+.card {
+    background-image: linear-gradient( #B3DE81, #FDFFFF);
 }
