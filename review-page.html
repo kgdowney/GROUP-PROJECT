@@ -12,6 +12,80 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-
+    
     <title>VeggieLife</title>
 </head>
+<body>
+
+        <form id="movie-form">
+                <label for="restaurants-input">Restaurant News</label>
+                <input type="text" id="restaurant-input">
+                <br>
+          
+                <!-- Button triggers new movie to be added -->
+                <input id="search-restaurant" type="submit" value="Restaurant News">
+              </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$("#search-restaurant").on("click", function(event) {
+        event.preventDefault();
+        // This line grabs the input from the textbox
+        var searchResults = $("#restaurant-input").val().trim();
+console.log(searchResults);
+
+var queryURL = "https://api.newsriver.io/v2/search?sortBy=_score&sortOrder=DESC&limit=5&query=" + searchResults + "%20AND%20language%3AEN" 
+$.ajax({
+          url: queryURL,
+          method: "GET",
+          headers: {
+            "Authorization": "sBBqsGXiYgF0Db5OV5tAw1PuBAhDIfdXZd2TIaluQ0eXFzkUYA5KhI7-qL9rzCeKn2pHZrSf1gT2PUujH1YaQA"
+          }
+        }).then(function(response) {
+            console.log(response)
+            var list = $("<ul></ul>");
+
+            for (var i = 0; i <response.length; i++){
+                console.log(response[i].title)
+                var urlItem = $("<li></li>");
+                var aTag = $('<a>');
+
+                aTag.attr('href', response[i].url);
+                aTag.html(response[i].title);
+                urlItem.append(aTag);
+                list.append(urlItem);
+            }
+
+            $('body').append(list);
+        });
+});
+
+
+
+
+// displayMovieInfo function re-renders the HTML to display the appropriate content
+
+
+
+
+
+
+
+// These code snippets use an open-source library. http://unirest.io/nodejs
+// unirest.get("https://contextualwebsearch-news-search-v1.p.mashape.com/api/Search/NewsSearchAPI?autocorrect=true&count=50&q=Donald+Trump")
+// .header("X-Mashape-Key", "ybY9Xw2etNmshw8KXs9RJVlQGenkp1uPTIgjsnKdMQxQN2dW3F")
+// .header("Accept", "application/json")
+// .end(function (result) {
+//   console.log(result.status, result.headers, result.body);
+// });
+
+    
+
+
+
+
+
+</script>
+</body>
+</html>
