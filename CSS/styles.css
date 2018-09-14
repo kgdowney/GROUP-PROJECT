@@ -1,3 +1,11 @@
+/* Style to fix the issue of text extending past panel length */
+.card-body a {
+    word-break: break-all;
+  }
+  .articleHeadline {
+    line-height: 1.5;
+  }
+/* Navbar & Jumbotron */
 .navbar-brand {
     color: #265C00;
 }
@@ -5,13 +13,14 @@
     background-color: #265C00; 
     color: #FDffff;
 }
-body {
-    background-image: linear-gradient( #68A225, #B3DE81);
-}
 .navbar {
     color: #265C00;
 }
 
+/* Body elements */
+body {
+    background-image: linear-gradient( #68A225, #B3DE81);
+}
 .card {
     background-image: linear-gradient( #B3DE81, #FDFFFF);
 }
