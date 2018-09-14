@@ -43,7 +43,7 @@
     </nav>
 
 
-  <!-- Search Container -->
+  <!-- Entire Page Container -->
     <div class="container">
       
     <!-- Jumbotron for Title -->
@@ -52,18 +52,16 @@
         </h1>
       </div>
       
-    <!-- Search box row -->
-      <div class="row" class="col-sm-12">
-      <br>
-        <!-- Search city-->
-        <div class="card">
-          <div class="card-header"><strong><i class="fas fa-city"></i> Search Your City</strong>
-        </div>
+    <!-- Search BOX Card -->
+      <div class="card">
+        <div class="card-header"><strong><i class="fas fa-city"></i> Search Your City</strong>
+      </div>
                 
         <!-- Search FORM-->
         <div class="card-body">
           <form role="search-form">
-          <!-- Text box for capturing input -->  
+
+          <!-- Text box for capturing INPUT -->  
             <div class="form-group">
               <label for="search">City:</label>
               <input type="text" class="form-control" id="search-input">
@@ -75,30 +73,13 @@
           </form>
         </div>
       
-          <!-- Search RESULTS card -->
-          <div class="row">
-            <div class="col-sm-12">
-              <br>
+    <!-- Search RESULTS card -->
+      <div class="results-card" class="col-sm-12">
+      <br>
+      <div class="card-header"><strong><i class="fas fa-utensils"></i> Results</strong>
+      </div>
       
-              <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
-              <div class="card">
-      
-                <!-- Panel Heading for the retrieved articles box -->
-                <div class="card-header">
-                  <strong>
-                    <i class="fas fa-utensils"></i> Results</strong>
-                </div>
-      
-                <!-- This main panel will hold each of the resulting articles -->
-                <div class="card-body" id="article-section">
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
+      <div class="card-body" id="restaurant-results-section"></div>
 
 <!-- Footer -->
 <footer class="page-footer font-small green darken-3">
@@ -175,7 +156,7 @@
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-  <!-- Load our React component. -->
+  <!-- Load our React component -->
   <script src="../GROUP-PROJECT/JavaScript/like_button.js"></script>
 </body>
 
