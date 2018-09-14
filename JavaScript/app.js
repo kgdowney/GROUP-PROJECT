@@ -23,17 +23,17 @@
             var priceItem =$("<li></li>");
 
             var name = response.results[i].name;
-            nameItem.text(name);
+            nameItem.text(name).css("font-weight","Bold");
             list.append(nameItem);
-            console.log(nameItem)
+            console.log(nameItem)            
             var address = response.results[i].formatted_address;
             addressItem.text(address);
             list.append(addressItem);
             var rating = response.results[i].rating;
-            ratingItem.text(rating);
+            ratingItem.text("Rating: " + rating);
             list.append(ratingItem);
             var price = response.results[i].price_level;
-            priceItem.text(price);
+            priceItem.text("Price Level: " + price);
             list.append(priceItem);
             
             $("#article-section").append(list);
