@@ -43,7 +43,7 @@
     </nav>
 
 
-  <!-- Search Container -->
+  <!-- Entire Page Container -->
     <div class="container">
       
     <!-- Jumbotron for Title -->
@@ -52,18 +52,16 @@
         </h1>
       </div>
       
-    <!-- Search box row -->
-      <div class="row" class="col-sm-12">
-      <br>
-        <!-- Search city-->
-        <div class="card">
-          <div class="card-header"><strong><i class="fas fa-city"></i> Search Your City</strong>
-        </div>
+    <!-- Search BOX Card -->
+      <div class="card">
+        <div class="card-header"><strong><i class="fas fa-city"></i> Search Your City</strong>
+      </div>
                 
         <!-- Search FORM-->
         <div class="card-body">
           <form role="search-form">
-          <!-- Text box for capturing input -->  
+
+          <!-- Text box for capturing INPUT -->  
             <div class="form-group">
               <label for="search">City:</label>
               <input type="text" class="form-control" id="search-input">
@@ -75,105 +73,63 @@
           </form>
         </div>
       
-          <!-- Search RESULTS card -->
-          <div class="row">
-            <div class="col-sm-12">
-              <br>
+    <!-- Search RESULTS card -->
+      <div class="results-card" class="col-sm-12">
+      <br>
+      <div class="card-header"><strong><i class="fas fa-utensils"></i> Results</strong>
+      </div>
       
-              <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
-              <div class="card">
-      
-                <!-- Panel Heading for the retrieved articles box -->
-                <div class="card-header">
-                  <strong>
-                    <i class="fas fa-utensils"></i> Results</strong>
-                </div>
-      
-                <!-- This main panel will hold each of the resulting articles -->
-                <div class="card-body" id="article-section">
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="card-body" id="restaurant-results-section"></div>
 
-
-
-
-
-<!-- Footer -->
-<footer class="page-footer font-small green darken-3">
-
-        <!-- Footer Elements -->
-        <div class="container">
-    
-          <!-- Grid row-->
-          <div class="row">
-    
-            <!-- Grid column -->
-            <div class="col-md-12 py-5">
-              <div class="mb-5 flex-center" align="center">
-    
-                <!-- Facebook -->
-                <a class="fb-ic">
-                  <i class="fab fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+  <!-- Footer -->
+    <footer class="page-footer font-small green darken-3">
+      <!-- Footer Elements -->
+      <div class="container">
+      <!-- Social -->
+        <div class="row">
+          <!-- Grid column/mobile snap -->
+            <div class="col-md-12 py-5"><div class="mb-5 flex-center">
+              <!-- Facebook -->
+                <a class="fb-ic"><i class="fab fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                 </a>
                 <!-- Twitter -->
-                <a class="tw-ic">
-                  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                <a class="tw-ic"><i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                 </a>
                 <!-- Google +-->
-                <a class="gplus-ic">
-                  <i class="fab fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                <a class="gplus-ic"><i class="fab fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                 </a>
                 <!--Linkedin -->
-                <a class="li-ic">
-                  <i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                <a class="li-ic"><i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                 </a>
                 <!--Instagram-->
-                <a class="ins-ic">
-                  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                <a class="ins-ic"><i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                 </a>
                 <!--Pinterest-->
-                <a class="pin-ic">
-                  <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                <a class="pin-ic"><i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
                 </a>
-              </div>
             </div>
-            <!-- Grid column -->
-    
-          </div>
-          <!-- Grid row-->
-    
         </div>
-        
-    
+      </div>
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2018 Copyright:
-<<<<<<< HEAD
             <a href="https://mdbootstrap.com/bootstrap-tutorial/"> VeggieLife</a>
             <br>
            <div id="like_button_container"></div>
-=======
-          <a href="https://mdbootstrap.com/bootstrap-tutorial/"> VeggieLife</a>
-          <div id="like_button_container"></div>
->>>>>>> keith
         </div>
-        <!-- Copyright -->
+      </div>  
+    </footer>
     
-      </footer>
-      <!-- Footer -->
-
-    </div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"     crossorigin="anonymous"></script>
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
     
+<<<<<<< HEAD
     <script src="JavaScript/app.js"></script>
 <<<<<<< HEAD
 
@@ -182,10 +138,18 @@
        <!-- Load React. -->
 >>>>>>> keith
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+=======
+  <script src="JavaScript/app.js"></script>
+
+<!-- React-->
+>>>>>>> Renee
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-  <!-- Load our React component. -->
+  
+<!-- Load React component -->
   <script src="../GROUP-PROJECT/JavaScript/like_button.js"></script>
+
 </body>
 
 </html>
