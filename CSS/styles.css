@@ -1,16 +1,44 @@
+/* Style to fix the issue of text extending past panel length */
+.card-body a {
+    word-break: break-all;
+  }
+  .articleHeadline {
+    line-height: 1.5;
+  }
+
+.navbar {
+   background-color: #420D09;
+}
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+
 .navbar-brand {
-    color: #265C00;
-}
-.jumbotron {
-    background-color: #265C00; 
-    color: #FDffff;
-}
-body {
-    background-image: linear-gradient( #68A225, #B3DE81);
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size:32px;
 }
 .navbar {
+    background-color: #420D09;
+    font-size:20px;
+}
+/* Body elements */
+body {
+    background:url(../assets/images/spinach.jpg);
+}
+
+.results-card {
+    background-image: linear-gradient( #68A225, #B3DE81);
+    opacity: .9;
+}
+
+.nav-link {
+    color:white;
+}
+a, a:hover, a:hover {
     color: #265C00;
 }
+<<<<<<< HEAD
 
 .card {
     background-image: linear-gradient( #B3DE81, #FDFFFF);
@@ -19,3 +47,13 @@ body {
 ul{
     list-style-type: none;
 }
+=======
+.text-center {
+    color:white;
+    font-family: 'Alfa Slab One', cursive;
+}
+#run-search {
+    float:center;
+    clear:both;
+}
+>>>>>>> bedfff5c74c76fd096f308dcfb7f469f62d2630d
