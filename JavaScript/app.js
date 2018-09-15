@@ -1,4 +1,3 @@
-
     var restaurants = [];
     
     function displayRestaurantInfo(city) {
@@ -20,7 +19,7 @@
             var nameItem =$("<li></li>");
             var addressItem =$("<li></li>");
             var ratingItem =$("<li></li>");
-            var priceItem =$("<li></li>");
+            var priceItem =$("<li></li>");            
 
             var name = response.results[i].name;
             nameItem.text(name).css("font-weight","Bold");
