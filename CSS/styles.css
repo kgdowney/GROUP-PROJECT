@@ -5,22 +5,30 @@
   .articleHeadline {
     line-height: 1.5;
   }
-/* Navbar & Jumbotron */
-.navbar-brand {
-    color: #265C00;
-}
-.jumbotron {
-    background-color: #265C00; 
-    color: #FDffff;
-}
+
 .navbar {
-    color: #265C00;
+   background-color: #420D09;
+}
+/* Navbar & Jumbotron */
+.jumbotron {
+    background-image: linear-gradient(#420D09, #800000); 
+    color: #FDffff;
+    border-radius: 10px;
+    padding: 75px;
+    opacity: .25;
 }
 
 /* Body elements */
 body {
-    background-image: linear-gradient( #68A225, #B3DE81);
+    background:url(../assets/images/spinach.jpg);
 }
-.card {
-    background-image: linear-gradient( #B3DE81, #FDFFFF);
+
+.search-card {
+    background-image: linear-gradient( #68A225, #B3DE81);
+    opacity: .80; 
+}
+
+.results-card {
+    background-image: linear-gradient( #68A225, #B3DE81);
+    opacity: .80;
 }
