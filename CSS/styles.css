@@ -9,18 +9,38 @@
 .navbar-brand {
     color: #265C00;
 }
-.jumbotron {
-    background-color: #265C00; 
-    color: #FDffff;
-}
-.navbar {
-    color: #265C00;
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
 }
 
+.navbar-brand {
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size:32px;
+}
+.navbar {
+    background-color: #420D09;
+    font-size:20px;
+}
 /* Body elements */
 body {
-    background-image: linear-gradient( #68A225, #B3DE81);
+    background:url(../assets/images/spinach.jpg);
 }
 .card {
     background-image: linear-gradient( #B3DE81, #FDFFFF);
+}
+
+.nav-link {
+    color:white;
+}
+a, a:hover, a:hover {
+    color: #265C00;
+}
+.text-center {
+    color:white;
+    font-family: 'Alfa Slab One', cursive;
+}
+#run-search {
+    float:center;
+    clear:both;
 }
