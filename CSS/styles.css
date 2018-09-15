@@ -6,9 +6,6 @@
     line-height: 1.5;
   }
 
-.navbar {
-   background-color: #420D09;
-}
 .navbar.navbar-1 .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
 }
@@ -32,6 +29,21 @@ body {
     opacity: .9;
 }
 
+.contact-card {
+    background-image: linear-gradient( #68A225, #B3DE81);
+    opacity: .9;
+}
+
+.articles-card {
+    background-image: linear-gradient( #68A225, #B3DE81);
+    opacity: .9;
+}
+
+.find-info-card {
+    background-image: linear-gradient( #68A225, #B3DE81);
+    opacity: .9;
+}
+
 .nav-link {
     color:white;
 }
@@ -51,7 +63,7 @@ a, a:hover, a:hover {
 }
 p {
     color:white;
-
-ul{
+}
+ul {
     list-style-type: none;
 }
