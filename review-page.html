@@ -16,75 +16,74 @@
     <title>VeggieLife</title>
 </head>
 <body>
-
-        <form id="movie-form">
+        <div class="container">    
+<div class="row">
+        <form id="search-form">
                 <label for="restaurants-input">Restaurant News</label>
                 <input type="text" id="restaurant-input">
                 <br>
           
-                <!-- Button triggers new movie to be added -->
+                
                 <input id="search-restaurant" type="submit" value="Restaurant News">
               </form>
+            </div>
 
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 
+
 $("#search-restaurant").on("click", function(event) {
-        event.preventDefault();
-        // This line grabs the input from the textbox
-        var searchResults = $("#restaurant-input").val().trim();
-console.log(searchResults);
+     // event.preventDefault();
 
-var queryURL = "https://api.newsriver.io/v2/search?sortBy=_score&sortOrder=DESC&limit=5&query=" + searchResults + "%20AND%20language%3AEN" 
-$.ajax({
-          url: queryURL,
-          method: "GET",
-          headers: {
-            "Authorization": "sBBqsGXiYgF0Db5OV5tAw1PuBAhDIfdXZd2TIaluQ0eXFzkUYA5KhI7-qL9rzCeKn2pHZrSf1gT2PUujH1YaQA"
-          }
-        }).then(function(response) {
-            console.log(response)
-            var list = $("<ul></ul>");
+       var newsLinks = ['<a href="https://www.foodnetwork.com/restaurants/az/tucson/renees-organic-oven-restaurant">Food Network</a>' 
+       + '<a href="https://www.tucsonweekly.com/TheRange/archives/2015/03/02/check-out-the-new-breakfast-menu-at-renees-organic-oven">Tucson Weekly</a>' 
+       + '<a href="https://tucsonfoodie.com/2016/08/10/happy-hour-of-the-week-renees-organic-oven/">Tucson Foodie</a>' 
+       + '<a href="http://ediblebajaarizona.com/renees-organic-oven">Edible Baja Arizona Magazine</a>' 
+       + '<a href="https://www.insidetucsonbusiness.com/on_the_menu/renee-s-organic-oven-brings-breakfast-pizza-to-tucson/article_2f7265ea-c9b3-11e4-a2cd-8b0db898802b.html">Inside Tucson Business</a>']
+       document.write(newsLinks);
 
-            for (var i = 0; i <response.length; i++){
-                console.log(response[i].title)
-                var urlItem = $("<li></li>");
-                var aTag = $('<a>');
 
-                aTag.attr('href', response[i].url);
-                aTag.html(response[i].title);
-                urlItem.append(aTag);
-                list.append(urlItem);
-            }
+// $("#search-restaurant").on("click", function(event) {
+//        // event.preventDefault();
+//         // This line grabs the input from the textbox
+//         var searchResults = 0
+//         //$("#restaurant-input").val().trim();
+// console.log(searchResults);
 
-            $('body').append(list);
-        });
-});
+// var newsLinks = ['<a href="https://www.foodnetwork.com/restaurants/az/tucson/renees-organic-oven-restaurant">Food Network</a>']
+
+ });
+// var queryURL = "https://contextualwebsearch-news-search-v1.p.mashape.com/api/Search/NewsSearchAPIWithPagination?q&count=5&" + searchResults + "GHH12Fn5aXmshTrY5Eu95PwcR6AYp1t6OqGjsn1tCzqGRaLi1P"
+// $.ajax({
+//           url: queryURL,
+//           method: "GET",
+//           headers: {
+//             "X-Mashape-Key": "GHH12Fn5aXmshTrY5Eu95PwcR6AYp1t6OqGjsn1tCzqGRaLi1P"
+//           }
 
 
 
+//         }).then(function(response) {
+//             console.log(response)
+//             var list = $("<ul></ul>");
 
-// displayMovieInfo function re-renders the HTML to display the appropriate content
+//             for (var i = 0; i <response.length; i++){
+//                 console.log(response[i].title)
+//                 var urlItem = $("<li></li>");
+//                 var aTag = $('<a>');
 
+//                 aTag.attr(response[i].url);
+//                 aTag.html(response[i].title);
+//                 urlItem.append(aTag);
+//                 list.append(urlItem);
+//             }
 
-
-
-
-
-
-// These code snippets use an open-source library. http://unirest.io/nodejs
-// unirest.get("https://contextualwebsearch-news-search-v1.p.mashape.com/api/Search/NewsSearchAPI?autocorrect=true&count=50&q=Donald+Trump")
-// .header("X-Mashape-Key", "ybY9Xw2etNmshw8KXs9RJVlQGenkp1uPTIgjsnKdMQxQN2dW3F")
-// .header("Accept", "application/json")
-// .end(function (result) {
-//   console.log(result.status, result.headers, result.body);
-// });
-
-    
-
+//             $('body').append(list);
+//         });
 
 
-
+   
 
 </script>
 </body>
