@@ -2,185 +2,211 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link href="css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link href="css/mdb.min.css" rel="stylesheet">
 
-    <title>VeggieLife</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bevan|Changa+One|Libre+Barcode+128+Text|Rammetto+One|Sonsie+One|Ultra"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="../GROUP-PROJECT/assets/images/favicon.jpg">
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
+  <title>VeggieLife</title>
 </head>
 
 <body>
-        <!--Nav bar-->
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">VL Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="reviewpage.html">Write a Review</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">About Us</a>
-                    </li>
-                
-                </ul>
-            </div>
-        </nav>
-    
-        <body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg ">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="index.html">
+      <i class="fa fa-leaf"></i>
+    </a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler toggler-example green darken-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent41"
+      aria-controls="navbarSupportedContent41" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="white-text">
+        <i class="fa fa-bars fa-1x"></i>
+      </span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent41">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="reviewpage.html">Grub Info
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+      <!-- Links -->
+
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+
+
+  <br>
+  <!-- Main Bootstrap Search -->
+  <div class="container">
+
+    <!-- Jumbotron for Title -->
     <br>
-            <!-- Main Bootstrap Search -->
-            <div class="container">
-          
-              <!-- Jumbotron for Title -->
-              <div class="jumbotron">
-                <h1 class="text-center">
-                  <strong>
-                    <i class="fa fa-leaf"></i> Restaurant News Search</strong>
-                </h1>
-                <br>
-                <p align="center">Want to know more about the vegetarian restaurant you're about to visit? Search below to find articles from various blogs and news sites!</p>
+    <br>
+    <br>
+    <br>
+    <h1 class="text-center">
+      <strong>
+        <i class="fa fa-leaf"></i> Grub Info</strong>
+    </h1>
+
+        <p align="center">Want to know more about the vegetarian restaurant you're about to visit? Search below to find articles from various
+          blogs and news sites!</p>
+    
+
+    <!-- Row for Searching New York Times -->
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+        <!-- First panel is for handling the search parameters -->
+        <div class="card">
+          <div class="card-header">
+            <strong>
+              <i class="fas fa-newspaper"></i> Search</strong>
+          </div>
+
+          <div class="card-body">
+            <!-- Here we create an HTML Form for handling the inputs-->
+            <form role="search-form">
+
+              <!-- Here we create the text box for capturing the search term-->
+              <div class="form-group">
+
+                <input type="text" class="form-control" id="search-input">
+
               </div>
-          
-              <!-- Row for Searching New York Times -->
-              <div class="row">
-                <div class="col-sm-12">
-                  <br>
-                  <!-- First panel is for handling the search parameters -->
-                  <div class="card">
-                    <div class="card-header">
-                      <strong>
-                        <i class="fas fa-city"></i> Search</strong>
-                    </div>
-                    
-                    <div class="card-body">
-                      <!-- Here we create an HTML Form for handling the inputs-->
-                      <form role="search-form">
-          
-                        <!-- Here we create the text box for capturing the search term-->
-                        <div class="form-group">
-                          
-                          <input type="text" class="form-control" id="search-input">
-    
-                        </div>
-          
-                        <!-- Here we have our final submit button -->
-                        <button type="submit" class="btn btn-default" id="run-search">
-                          <i class="fa fa-search"></i> Search</button>
-                      </form>
-                    </div>
-    
-    
-                  </div>
-                </div>
-              </div>
-          
-              <!-- This row will handle all of the retrieved articles -->
-              <div class="row">
-                <div class="col-sm-12">
-                  <br>
-          
-                  <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
-                  <div class="card">
-          
-                    <!-- Panel Heading for the retrieved articles box -->
-                    <div class="card-header">
-                      <strong>
-                        <i class="fas fa-utensils"></i> Results</strong>
-                    </div>
-                   
-                    <!-- This main panel will hold each of the resulting articles -->
-                    <div class="card-body" id="article-section">
-                      
-                    </div>
-                  </div>
-                  <br>
-                </div>
-              </div>
-    
-    
-    
-    
-    
+
+              <!-- Here we have our final submit button -->
+              <button type="submit" class="btn btn-green" id="run-search">
+                <i class="fa fa-search"></i> Search</button>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- This row will handle all of the retrieved articles -->
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+
+        <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
+        <div class="card">
+
+          <!-- Panel Heading for the retrieved articles box -->
+          <div class="card-header">
+            <strong>
+              <i class="fas fa-comment-alt"></i> Articles</strong>
+          </div>
+
+          <!-- This main panel will hold each of the resulting articles -->
+          <div class="card-body" id="article-section">
+
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+
+
+
+
     <!-- Footer -->
     <footer class="page-footer font-small green darken-4">
-    
-            <!-- Footer Elements -->
-            <div class="container">
-        
-              <!-- Grid row-->
-              <div class="row">
-        
-                <!-- Grid column -->
-                <div class="col-md-12 py-5">
-                  <div class="mb-5 flex-center" align="center">
-        
-                    <!-- Facebook -->
-                    <a class="fb-ic">
-                      <i class="fab fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!-- Twitter -->
-                    <a class="tw-ic">
-                      <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!-- Google +-->
-                    <a class="gplus-ic">
-                      <i class="fab fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Linkedin -->
-                    <a class="li-ic">
-                      <i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Instagram-->
-                    <a class="ins-ic">
-                      <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Pinterest-->
-                    <a class="pin-ic">
-                      <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-                    </a>
-                  </div>
-                </div>
-                <!-- Grid column -->
-        
-              </div>
-              <!-- Grid row-->
-        
+
+      <!-- Footer Elements -->
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-md-12 py-5">
+            <div class="mb-5 flex-center" align="center">
+
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+              </a>
             </div>
-            <!-- Footer Elements -->
-        
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2018 Copyright:
-              <a href="https://mdbootstrap.com/bootstrap-tutorial/"> VeggieLife</a>
-            </div>
-            <!-- Copyright -->
-        
-          </footer>
-          <!-- Footer -->
-    
+          </div>
+          <!-- Grid column -->
+
         </div>
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-        
-        <script src="JavaScript/app.js"></script>
-    </body>
-    
-    </html>
+        <!-- Grid row-->
+
+      </div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> VeggieLife</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="JavaScript/app.js"></script>
+</body>
+
+</html>
