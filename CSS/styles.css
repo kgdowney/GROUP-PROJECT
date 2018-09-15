@@ -51,4 +51,7 @@ a, a:hover, a:hover {
 }
 p {
     color:white;
+
+ul{
+    list-style-type: none;
 }
