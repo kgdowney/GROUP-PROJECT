@@ -5,9 +5,9 @@
   .articleHeadline {
     line-height: 1.5;
   }
-/* Navbar & Jumbotron */
-.navbar-brand {
-    color: #265C00;
+
+.navbar {
+   background-color: #420D09;
 }
 .navbar.navbar-1 .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
@@ -26,8 +26,10 @@
 body {
     background:url(../assets/images/spinach.jpg);
 }
-.card {
-    background-image: linear-gradient( #B3DE81, #FDFFFF);
+
+.results-card {
+    background-image: linear-gradient( #68A225, #B3DE81);
+    opacity: .9;
 }
 
 .nav-link {

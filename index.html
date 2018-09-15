@@ -7,19 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- CSS/Style -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bevan|Changa+One|Libre+Barcode+128+Text|Rammetto+One|Sonsie+One|Ultra"
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bevan|Changa+One|Libre+Barcode+128+Text|Rammetto+One|Sonsie+One|Ultra"
     rel="stylesheet">
   <link rel="shortcut icon" href="../GROUP-PROJECT/assets/images/favicon.jpg">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-
+    
+    
   <title>VeggieLife</title>
 </head>
 
@@ -67,7 +66,6 @@
   <div class="container">
 
     <!-- Jumbotron for Title -->
-    <!-- <div class="jumbotron"> -->
     <br>
     <br>
     <br>
@@ -76,29 +74,25 @@
       <strong>
         <i class="fa fa-leaf"></i> VeggieLife</strong>
     </h1>
-    <!-- </div> -->
+      
+    <!-- Search BOX Card -->
+      <div class="search-card">
+      </div>
+                
+        <!-- Search FORM-->
+        <div class="card-body">
+          <form role="search-form">
 
-    <!-- Row for Searching New York Times -->
-    <br>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-sm-12">
-
-        <!-- First panel is for handling the search parameters -->
-        <div class="card">
-          <div class="card-body">
-            <!-- Here we create an HTML Form for handling the inputs-->
-            <form role="search-form">
-              <!-- Here we create the text box for capturing the search term-->
-              <div class="form-group">
-                <!-- Here we have our final submit button -->
-                <input type="text" class="form-control" id="search-input" placeholder="Search Your City">
-                <button type="submit" class="btn btn-green" id="run-search">
-                  <i class="fa fa-search"></i> Search</button>
-              </div>
-            </form>
-          </div>
+          <!-- Text box for capturing INPUT -->  
+            <div class="form-group">
+              <label for="search"></label>
+              <input type="text" class="form-control" id="search-input"placeholder="Search your city">
+            </div>
+      
+          <!-- Form SUBMIT button -->
+            <button type="submit" class="btn btn-green" id="run-search"><i class="fa fa-search"></i> Search</button>
+          
+          </form>
         </div>
       </div>
 
@@ -185,17 +179,11 @@
     crossorigin="anonymous"></script>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-
-
-  <script src="JavaScript/app.js"></script>
-  <!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-
+  crossorigin="anonymous"></script>
+    
   <script src="JavaScript/app.js"></script>
 
-  <!-- React-->
-
+<!-- React-->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
 
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>

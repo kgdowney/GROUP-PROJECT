@@ -45,6 +45,3 @@
         restaurants.push(cityName);
 
       });
-
-    //   // Adding a click event listener to all elements with a class of "movie-btn"
-    // $(document).on("click", displayRestaurantInfo);
