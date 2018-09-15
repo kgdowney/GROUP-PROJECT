@@ -46,3 +46,9 @@ a, a:hover, a:hover {
     float:center;
     clear:both;
 }
+.jumbotron {
+    background-color:#265C00;
+}
+p {
+    color:white;
+}
