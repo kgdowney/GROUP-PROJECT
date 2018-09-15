@@ -38,16 +38,6 @@ body {
 a, a:hover, a:hover {
     color: #265C00;
 }
-<<<<<<< HEAD
-
-.card {
-    background-image: linear-gradient( #B3DE81, #FDFFFF);
-}
-
-ul{
-    list-style-type: none;
-}
-=======
 .text-center {
     color:white;
     font-family: 'Alfa Slab One', cursive;
@@ -56,4 +46,7 @@ ul{
     float:center;
     clear:both;
 }
->>>>>>> bedfff5c74c76fd096f308dcfb7f469f62d2630d
+
+ul{
+    list-style-type: none;
+}

@@ -55,11 +55,8 @@
         // Adding city from the textbox to our array
         restaurants.push(cityName);
 
-<<<<<<< HEAD
 
-      });
+    });
 
    
-=======
-      });
->>>>>>> bedfff5c74c76fd096f308dcfb7f469f62d2630d
+     
