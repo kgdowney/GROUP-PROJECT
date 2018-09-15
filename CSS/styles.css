@@ -1,17 +1,34 @@
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+
 .navbar-brand {
-    color: #265C00;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size:32px;
 }
-.jumbotron {
-    background-color: #265C00; 
-    color: #FDffff;
-}
+
 body {
     background-image: linear-gradient( #68A225, #B3DE81);
 }
 .navbar {
     color: #265C00;
+    font-size:20px;
+    background:url(../assets/images/banner.jpg);
 }
+
 
 .card {
     background-image: linear-gradient( #B3DE81, #FDFFFF);
+    
+}
+.nav-link {
+    color:white;
+}
+a, a:hover, a:hover {
+    color: #265C00;
+}
+.text-center {
+    color:white;
+    font-family: 'Alfa Slab One', cursive;
 }
