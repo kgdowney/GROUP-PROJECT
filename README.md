@@ -1,6 +1,6 @@
 # **Project 1 Outline**
 ## **VeggieLife**
-> University of Arizona Coding Bootcamp / Summer 2018
+> University of Arizona Coding Bootcamp 
 
 ### **PROJECT SUMMARY**
 > Our app is based on three principles:  
